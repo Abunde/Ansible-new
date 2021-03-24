@@ -1,0 +1,10 @@
+---
+- name: this copybook createsa file or dir
+  hosts: all
+  # become: true
+  gather_facts: yes
+  tasks:
+  - name: creating a file
+    file: 
+      path: /home/abunde/dir1
+      state: directory
